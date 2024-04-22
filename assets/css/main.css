@@ -1,0 +1,361 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  background-color: white;
+  padding: 25px;
+}
+header .containerHeader {
+  width: 90%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+}
+header .containerHeader .rightArea h2 {
+  font-family: "Anton", sans-serif;
+  letter-spacing: 4px;
+  font-weight: 400;
+  font-style: normal;
+  color: red;
+  font-size: 25px;
+}
+header .containerHeader nav {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 29px;
+}
+header .containerHeader nav ul {
+  display: flex;
+  gap: 20px;
+  margin-left: 45px;
+}
+header .containerHeader nav li {
+  list-style: none;
+}
+header .containerHeader nav a {
+  text-decoration: none;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 90;
+  font-size: 16px;
+  font-style: normal;
+  color: black;
+}
+header .containerHeader .menu {
+  display: none;
+}
+header .containerHeader .icon:hover {
+  cursor: pointer;
+  color: #FD5F00;
+}
+
+#sectionOne {
+  width: 100%;
+  min-height: 150vh;
+  background-image: url("https://preview.colorlib.com/theme/foundation/images/hero_2.jpg.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#box {
+  width: 100%;
+  height: 600px;
+}
+#box .boxes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#box .boxes .grey {
+  width: 33.3%;
+  background-color: gray;
+  height: 230px;
+  padding: 50px;
+}
+#box .boxes .grey .one {
+  height: 100px;
+  border: 2px solid #A7A7A7;
+}
+#box .boxes .orange {
+  width: 33.3%;
+  background-color: #FD5F00;
+  height: 230px;
+  padding: 50px;
+}
+#box .boxes .orange .two {
+  height: 100px;
+  border: 2px solid #A7A7A7;
+}
+#box .boxes .red {
+  width: 33.3%;
+  background-color: #A23131;
+  height: 230px;
+  padding: 50px;
+}
+#box .boxes .red .three {
+  height: 100px;
+  border: 2px solid #A7A7A7;
+}
+
+@media screen and (max-width: 990px) {
+  #box .boxes {
+    flex-direction: column;
+  }
+  #box .boxes .grey {
+    width: 100%;
+  }
+  #box .boxes .red {
+    width: 100%;
+  }
+  #box .boxes .orange {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 850px) {
+  header .containerHeader nav {
+    display: none;
+  }
+  header .containerHeader .menu {
+    display: block;
+  }
+}
+@media screen and (max-width: 400px) {
+  #box .boxes .grey .one .rescue {
+    font-size: 14px;
+  }
+  #box .boxes .grey .one p {
+    font-size: 14px;
+  }
+}
+#productCard {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+#productCard .productCard {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  border: 2px solid gray;
+  border-radius: 10px;
+  padding: 25px;
+  align-items: center;
+  margin-top: 5px;
+  transition: 0.5s;
+  justify-content: center;
+  height: 300px;
+}
+#productCard .productCard:hover {
+  transition: 0.5s;
+}
+#productCard .productCard img {
+  width: 50%;
+  height: 100px;
+}
+#productCard .productCard .cardBox {
+  width: 100%;
+  height: 130px;
+  gap: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#productCard .productCard .cardBox h3 {
+  font-size: 30px;
+  font-weight: 100px;
+}
+#productCard .productCard .cardBox p {
+  font-size: 16px;
+}
+#productCard .productCard .cardBtn {
+  width: 100%;
+  height: 40px;
+  background-color: blue;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  cursor: pointer;
+  transition: 0.1s;
+}
+#productCard .productCard .cardBtn:hover {
+  background-color: red;
+  transition: 1.5s;
+}
+#productCard .productCard .cartButton {
+  display: flex;
+  background-color: #f8f8f8;
+  padding: 15px;
+  border-radius: 50%;
+  text-decoration: none;
+  position: relative;
+}
+#productCard .productCard .cartCount {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+@media screen and (max-width: 579px) {
+  #productCard .productCard img {
+    width: 100%;
+  }
+  #productCard .productCard .cardBox h3 {
+    font-size: 10px;
+  }
+  #productCard .productCard .cardBox p {
+    font-size: 9px;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  background-color: white;
+  padding: 25px;
+}
+header .containerHeader {
+  width: 90%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+}
+header .containerHeader .rightArea h2 {
+  font-family: "Anton", sans-serif;
+  letter-spacing: 4px;
+  font-weight: 400;
+  font-style: normal;
+  color: red;
+  font-size: 25px;
+}
+header .containerHeader nav {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 29px;
+}
+header .containerHeader nav ul {
+  display: flex;
+  gap: 20px;
+  margin-left: 45px;
+}
+header .containerHeader nav li {
+  list-style: none;
+}
+header .containerHeader nav a {
+  text-decoration: none;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 90;
+  font-size: 16px;
+  font-style: normal;
+  color: black;
+}
+header .containerHeader .menu {
+  display: none;
+}
+header .containerHeader .icon:hover {
+  cursor: pointer;
+  color: #FD5F00;
+}
+
+#productCard {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+#productCard .productCard {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  border: 2px solid gray;
+  border-radius: 10px;
+  padding: 25px;
+  align-items: center;
+  margin-top: 5px;
+  transition: 0.5s;
+  justify-content: center;
+  height: 300px;
+}
+#productCard .productCard:hover {
+  transition: 0.5s;
+}
+#productCard .productCard img {
+  width: 50%;
+  height: 100px;
+}
+#productCard .productCard .cardBox {
+  width: 100%;
+  height: 130px;
+  gap: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#productCard .productCard .cardBox h3 {
+  font-size: 30px;
+  font-weight: 100px;
+}
+#productCard .productCard .cardBox p {
+  font-size: 16px;
+}
+#productCard .productCard .cardBtn {
+  width: 100%;
+  height: 40px;
+  background-color: blue;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  cursor: pointer;
+  transition: 0.1s;
+}
+#productCard .productCard .cardBtn:hover {
+  background-color: red;
+  transition: 1.5s;
+}
+#productCard .productCard .cartButton {
+  display: flex;
+  background-color: #f8f8f8;
+  padding: 15px;
+  border-radius: 50%;
+  text-decoration: none;
+  position: relative;
+}
+#productCard .productCard .cartCount {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+@media screen and (max-width: 579px) {
+  #productCard .productCard img {
+    width: 100%;
+  }
+  #productCard .productCard .cardBox h3 {
+    font-size: 10px;
+  }
+  #productCard .productCard .cardBox p {
+    font-size: 9px;
+  }
+}
